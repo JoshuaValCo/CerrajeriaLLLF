@@ -19,8 +19,8 @@
             align-items: center;
         }
         header img {
-            height: 75px; 
-            margin-right: 10px
+            height: 75px;
+            margin-right: 10px;
         }
         nav {
             background-color: #fcf3cf;
@@ -39,10 +39,14 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        img {
+        section img {
+            display: block;
             max-width: 100%;
-            height: auto;
-            border-radius: 5px;
+            width: 500px; /* Tamaño fijo */
+            height: 300px; /* Altura fija */
+            object-fit: cover; /* Mantiene las proporciones */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 0 auto; /* Centra la imagen */
         }
         footer {
             text-align: center;
@@ -51,15 +55,24 @@
             color: #fff;
             margin-top: 20px;
         }
-         ul {
-        list-style-type: circle;
-        padding-left: 20px; 
-        color: #1c2833; /* Cambia el color de las viñetas */
-    }
-    ul li {
-        font-size: 1.1em; 
-        margin-bottom: 8px; 
-    }
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+            color: #1c2833;
+        }
+        ul li {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #873600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -78,53 +91,49 @@
     <main>
         <section id="servicios">
             <h2>Servicios de Cerrajería</h2>
-           <p>Contamos con diferentes servicios para tu comodidad:</p>
-    <ul>
-        <li>Apertura de Puertas (solo Veracruz)</li>
-        <li>Duplicado de Llaves</li>
-        <li>Reparación de Cerraduras</li>
-        <li>Apertura de Vehículos</li>
-        <li>Y más...</li>
-    </ul>
-    <p>Pregunta por cualquiera de nuestros servicios y con gusto te atenderemos.</p>
-    <img src="Cerrajeria.jpg" alt="Imagen de servicios de cerrajería">
-</section>
-        <section id="instalacion">
-    <h2>Instalación de Cerraduras</h2>
-    <p>Con nosotros no tendrás de qué preocuparte al cerrar tu puerta; contamos con la mejor calidad en nuestras cerraduras para que duermas tranquilo porque nuestra seguridad es la mejor.</p>
-    <button onclick="location.href='cerraduras.html'" style="margin-top: 10px; padding: 10px 20px; background-color: #6e2c00; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 1em;">
-        Ver Cerraduras
-    </button>
-    <img src="Cerraduras.jpg" alt="Imagen de instalación de cerraduras" style="margin-top: 15px;">
-</section>
+            <p>Contamos con diferentes servicios para tu comodidad:</p>
+            <ul>
+                <li>Apertura de Puertas (solo Veracruz)</li>
+                <li>Duplicado de Llaves</li>
+                <li>Reparación de Cerraduras</li>
+                <li>Apertura de Vehículos</li>
+                <li>Y más...</li>
+            </ul>
+            <p>Pregunta por cualquiera de nuestros servicios y con gusto te atenderemos.</p>
+            <img src="Cerrajeria.jpg" alt="Imagen de servicios de cerrajería">
         </section>
-         <section id="contacto">
-    <h2>Contacto de Emergencias 24/7</h2>
-    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
-        <!-- Columna de información de contacto -->
-        <div style="flex: 1; min-width: 300px;">
-            <p>Teléfono: <a href="tel:+525512345678">+52 55 1234 5678</a></p>
-            <p>Correo: <a href="mailto:info@llavefiel.com">info@llavefiel.com</a></p>
-            <p>Estamos disponibles las 24 horas del día para emergencias. ¡No dudes en llamarnos!</p>
-            <div style="margin-top: 20px;">
-                <a href="https://www.facebook.com/tuperfil" target="_blank" style="margin-right: 10px; padding: 10px 20px; background-color: #4267B2; color: #fff; border: none; border-radius: 5px; text-decoration: none; font-size: 1em; cursor: pointer;">
-                    Facebook
-                </a>
-                <a href="https://wa.me/525512345678" target="_blank" style="padding: 10px 20px; background-color: #25D366; color: #fff; border: none; border-radius: 5px; text-decoration: none; font-size: 1em; cursor: pointer;">
-                    WhatsApp
-                </a>
+        <section id="instalacion">
+            <h2>Instalación de Cerraduras</h2>
+            <p>Con nosotros no tendrás de qué preocuparte al cerrar tu puerta; contamos con la mejor calidad en nuestras cerraduras para que duermas tranquilo porque nuestra seguridad es la mejor.</p>
+            <button onclick="window.location.href='cerraduras.html'">Ver Cerraduras</button>
+            <img src="Cerraduras.jpg" alt="Imagen de instalación de cerraduras">
+        </section>
+        <section id="contacto">
+            <h2>Contacto de Emergencias 24/7</h2>
+            <img src="Contacto.jpg" alt="Imagen de contacto de emergencia">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <p>Teléfono: <a href="tel:+525512345678">+52 55 1234 5678</a></p>
+                    <p>Correo: <a href="mailto:info@llavefiel.com">info@llavefiel.com</a></p>
+                    <p>Estamos disponibles las 24 horas del día para emergencias. ¡No dudes en llamarnos!</p>
+                    <div style="margin-top: 20px;">
+                        <a href="https://www.facebook.com/tuperfil" target="_blank" style="margin-right: 10px; padding: 10px 20px; background-color: #4267B2; color: #fff; border: none; border-radius: 5px; text-decoration: none; font-size: 1em; cursor: pointer;">
+                            Facebook
+                        </a>
+                        <a href="https://wa.me/525512345678" target="_blank" style="padding: 10px 20px; background-color: #25D366; color: #fff; border: none; border-radius: 5px; text-decoration: none; font-size: 1em; cursor: pointer;">
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div style="flex: 1; min-width: 300px; text-align: center;">
+                    <a href="https://www.google.com/maps?q=19.432608,-99.133209" target="_blank" style="text-decoration: none;">
+                        <img src="google-maps-icon.png" alt="Ubicación en Google Maps" style="width: 150px; height: 150px; border-radius: 10px;">
+                    </a>
+                    <p style="margin-top: 10px;">Haz clic en el ícono para ver nuestra ubicación en Google Maps.</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Columna de ubicación -->
-        <div style="flex: 1; min-width: 300px; text-align: center;">
-            <a href="https://www.google.com/maps?q=19.432608,-99.133209" target="_blank" style="text-decoration: none;">
-                <img src="google-maps-icon.png" alt="Ubicación en Google Maps" style="width: 500px; height: 500px; border-radius: 30px;">
-            </a>
-                   </div>
-    </div>
-</section>
-
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Cerrajería "La Llave Fiel". Todos los derechos reservados.</p>
     </footer>
