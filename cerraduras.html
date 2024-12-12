@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Cerraduras - Cerrajería La Llave Fiel</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #873600;
+        }
+        header {
+            background-color: #6e2c00;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 75px; /* Ajusta el tamaño del logo */
+            margin-right: 10px; /* Espaciado entre el logo y el texto */
+        }
+        nav {
+            background-color: #fcf3cf;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #1c2833;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fcf3cf;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6e2c00;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .catalogo-item {
+            width: 200px;
+            text-align: center;
+        }
+        .boton {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #6e2c00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo de Cerrajería La Llave Fiel">
+        <div>
+            <h1>"La Llave Fiel"</h1>
+            <p>Catálogo de Cerraduras</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Nuestro Catálogo</h2>
+            <p>Somos expertos en todo tipo de cerraduras pregunta por las marcas que manejamos y las que se adecuen a tus necesidades.</p>
+            <div class="catalogo">
+                <div class="catalogo-item">
+                    <img src="cerradura1.jpg" alt="Cerradura de alta seguridad">
+                    <p>Cerradura de Alta Seguridad</p>
+                </div>
+                <div class="catalogo-item">
+                    <img src="cerradura2.jpg" alt="Cerradura inteligente">
+                    <p>Cerradura Inteligente</p>
+                </div>
+                <div class="catalogo-item">
+                    <img src="cerradura3.jpg" alt="Cerradura tradicional">
+                    <p>Cerradura Tradicional</p>
+                </div>
+                <div class="catalogo-item">
+                    <img src="cerradura4.jpg" alt="Cerradura biométrica">
+                    <p>Cerradura Biométrica</p>
+                </div>
+            </div>
+        </section>
+        <section style="text-align: center; margin-top: 20px;">
+            <a href="index.html" class="boton">Inicio</a>
+            <a href="index.html#contacto" class="boton">Contacto</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cerrajería "La Llave Fiel". Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
